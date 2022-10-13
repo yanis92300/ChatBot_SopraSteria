@@ -1,0 +1,43 @@
+{"intents": [
+    {"tag": "Salutation",
+     "patterns": ["Bonjour", "Salutation", "Hello", "Salut"],
+     "responses": ["Bienvenue", "Enchante"],
+     "context": [""]
+    },
+    {"tag": "Fin",
+     "patterns": ["Merci bien", "Bye", "Au revoir","A plus"],
+     "responses": ["Merci de nous avoir contacte", "A bientot"],
+     "context": [""]
+    },
+    {"tag": "Demande",
+     "patterns": ["Creation d'un compte github", "Demande de droit d'ecriture", "Demande d'acces", "Ajout d'un utilisateur", "Autorisation d'installation" ],
+     "responses": ["Deposez moi en piece jointe les informations complementaires necessaires a la fin, et je m'en occuperai"],
+     "context": ["Ajout_d'un_ticket"]
+    },
+    {"tag": "Libelle",
+     "patterns": [],
+     "responses": ["[Projet] et [Version] + Libelle"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [""],
+     "responses": ["Desole, je ne vous comprends pas", "Veuillez me donner plus d'informations", "Je ne suis pas sur de comprendre"],
+     "context": [""]
+    },
+    {"tag": "delais",
+     "patterns": ["Est ce possible de me resoudre ce probleme au plus vite", "Combien de temps ça prendra", "Quel sera le delai"],
+     "responses": ["Nous ferons au plus vite", "Cela nous prendra entre 24 et 72 heures", "Je sais que je suis rapide mais, je travaille aussi avec des humains", "Nous reviendrons vers des que nous avons du nouveau"],
+     "context": [""]
+    },
+    {"tag": "Offre_de_service",
+     "patterns": ["Offre de service","Service"],
+     "responses": ["Votre offre de service est bien le numero 32, pour une creation","Daccord, je note que votre offre de serivce est dans la categorie 11"],
+     "context": [""]
+    },
+    {"tag": "Urgence_motif",
+     "patterns": ["URGENT","Prioritaire"],
+     "responses": ["Pour quel motif","Vous avez interet a dire vrai","Je n'ose pas y croire"],
+     "context": [""]
+    }
+]
+}
